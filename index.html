@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <script>
+      // Apply saved theme before paint to avoid a flash. Default: light.
+      (function () {
+        try {
+          if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>Chriswin Rojes — Cloud & Networking Engineer</title>
+    <meta name="title" content="Chriswin Rojes — Cloud & Networking Engineer" />
+    <meta
+      name="description"
+      content="Chriswin Rojes — Cloud & Networking Engineer specializing in AWS, Python, Network Design and Automation. Graduate Technical Intern at NLC India Limited."
+    />
+    <meta name="author" content="Chriswin Rojes" />
+    <meta
+      name="keywords"
+      content="Chriswin Rojes, Cloud Engineer, Networking Engineer, AWS, Python, Network Automation, Portfolio, NLC India Limited"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chriswin Rojes — Cloud & Networking Engineer" />
+    <meta
+      property="og:description"
+      content="Passionate Cloud and Networking Engineer with experience in Python, AWS, Network Design and Automation."
+    />
+    <meta property="og:image" content="/profile.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chriswin Rojes — Cloud & Networking Engineer" />
+    <meta
+      name="twitter:description"
+      content="Passionate Cloud and Networking Engineer with experience in Python, AWS, Network Design and Automation."
+    />
+
+    <!-- Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

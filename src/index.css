@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) */
+:root {
+  --bg: 255 255 255;
+  --bg-soft: 241 245 249;
+  --bg-card: 255 255 255;
+  --fg: 15 23 42;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: 0 10px 40px rgba(15, 23, 42, 0.06);
+  --grid-line: rgba(59, 130, 246, 0.08);
+  color-scheme: light;
+}
+
+/* Dark theme */
+.dark {
+  --bg: 5 8 22;
+  --bg-soft: 7 10 28;
+  --bg-card: 11 16 35;
+  --fg: 230 235 255;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: none;
+  --grid-line: rgba(59, 130, 246, 0.06);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: "Poppins", system-ui, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#1d4ed8, #3b82f6);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #ffffff;
+}
+
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-accent/40 hover:shadow-glow-sm;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-28;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent-dark px-7 py-3 text-sm font-semibold text-white shadow-glow-sm transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-7 py-3 text-sm font-semibold transition-all duration-300 hover:border-accent/60 hover:bg-accent/10;
+    border-color: rgb(var(--fg) / 0.15);
+    color: rgb(var(--fg) / 0.9);
+  }
+
+  .btn-outline:hover {
+    color: rgb(var(--fg));
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.3em] text-accent;
+  }
+}
+
+/* Radial glow helper */
+.glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
