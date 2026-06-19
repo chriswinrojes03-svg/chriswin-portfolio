@@ -6,7 +6,7 @@ import SectionHeading from "./SectionHeading";
 
 const contactItems = [
   { icon: Mail, label: "Email", value: profile.email, href: profile.socials.email },
-  { icon: Github, label: "GitHub", value: "@chriswinrojes", href: profile.socials.github },
+  { icon: Github, label: "GitHub", value: "@chriswinrojes03-svg", href: profile.socials.github },
   { icon: Linkedin, label: "LinkedIn", value: "Chriswin Rojes", href: profile.socials.linkedin },
   { icon: MapPin, label: "Location", value: profile.location, href: undefined },
 ];

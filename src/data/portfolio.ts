@@ -22,12 +22,12 @@ export const profile = {
   objective:
     "To grow as a Cloud & Networking Engineer by building secure, scalable and automated infrastructure — bridging the gap between robust network design and modern cloud platforms.",
   location: "Tamil Nadu, India",
-  email: "chriswinrojes@gmail.com",
+  email: "chriswinrojes03@gmail.com",
   resumeUrl: "./resume.pdf",
   socials: {
-    github: "https://github.com/chriswinrojes",
+    github: "https://github.com/chriswinrojes03-svg",
     linkedin: "https://www.linkedin.com/in/chriswin-rojes-6a5749403",
-    email: "mailto:chriswinrojes@gmail.com",
+    email: "mailto:chriswinrojes03@gmail.com",
   },
 };
 
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     description:
       "AI-based fault prediction system that captures live network traffic, analyzes packet health, and forecasts potential failures before they impact services.",
     tech: ["Python", "FastAPI", "Scapy", "PostgreSQL", "React"],
-    github: "https://github.com/chriswinrojes",
+    github: "https://github.com/chriswinrojes03-svg",
     demo: "#",
     gradient: "from-blue-500/20 to-cyan-500/10",
   },
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     description:
       "A single pane of glass to monitor and manage distributed network devices using SNMP polling, with alerting and historical reporting.",
     tech: ["Python", "SQL", "SNMP"],
-    github: "https://github.com/chriswinrojes",
+    github: "https://github.com/chriswinrojes03-svg",
     demo: "#",
     gradient: "from-indigo-500/20 to-blue-500/10",
   },
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     description:
       "Real-time dashboard visualizing AWS resource metrics, cost and health using CloudWatch data with interactive charts and live updates.",
     tech: ["AWS", "React", "Chart.js"],
-    github: "https://github.com/chriswinrojes",
+    github: "https://github.com/chriswinrojes03-svg",
     demo: "#",
     gradient: "from-sky-500/20 to-blue-600/10",
   },
