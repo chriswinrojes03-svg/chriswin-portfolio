@@ -136,7 +136,7 @@ export default function Hero() {
 
             {!imgError ? (
               <img
-                src="/profile.jpg"
+                src="./profile.png"
                 alt={profile.name}
                 onError={() => setImgError(true)}
                 className="h-full w-full object-cover grayscale-[15%]"

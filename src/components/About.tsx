@@ -26,9 +26,18 @@ export default function About() {
             <div className="absolute inset-0 z-10 bg-gradient-to-tr from-accent/15 to-transparent" />
             {!imgError ? (
               <img
-                src="/about.jpg"
-                alt="Chriswin Rojes workspace"
-                onError={() => setImgError(true)}
+                src="./about.jpg"
+                alt="Chriswin Rojes"
+                onError={(e) => {
+                  // Fall back to the profile photo, then to the styled placeholder.
+                  const img = e.currentTarget;
+                  if (!img.dataset.fallback) {
+                    img.dataset.fallback = "1";
+                    img.src = "./profile.png";
+                  } else {
+                    setImgError(true);
+                  }
+                }}
                 className="h-full w-full object-cover"
               />
             ) : (

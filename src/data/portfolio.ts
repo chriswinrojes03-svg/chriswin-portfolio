@@ -23,7 +23,7 @@ export const profile = {
     "To grow as a Cloud & Networking Engineer by building secure, scalable and automated infrastructure — bridging the gap between robust network design and modern cloud platforms.",
   location: "Tamil Nadu, India",
   email: "chriswinrojes@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "./resume.pdf",
   socials: {
     github: "https://github.com/chriswinrojes",
     linkedin: "https://www.linkedin.com/in/chriswin-rojes-6a5749403",
